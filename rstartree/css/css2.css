@@ -1,0 +1,30 @@
+img{
+    width: 216px;
+    height: 320px;
+}
+div#movieLikes{
+    margin: auto;
+    position: absolute;
+    padding-top: 20px;
+    z-index: -3;
+}
+
+h3{
+    text-align: center;
+}
+
+#movieLikes .movieIntro {
+    float: left;    
+    width: 216px;
+    padding: 20px;
+    margin: auto;
+}
+p{
+    text-indent: 2em;
+}
+h3{
+    color: black;
+}
+body{
+    background-image: url("bg.png");
+}

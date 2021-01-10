@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+    <canvas id="canvas"></canvas>
+    
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=EE06A4Kgswp6Hz2fe7mg9AHf3G0Nzy14"></script>
+    <script type="text/javascript" src="http://mapv.baidu.com/build/mapv.js"></script>
+    <script src="http://static.popodv.com/dvlibs/tool/jquery.min.js"></script>
+    <div>点击按钮获取JSON数据</div> 
+<input type="button" id="button" value="确定" /> 
+<div id="result"></div> 
+    <script type="text/javascript">
+$.getJSON("data.js", function(json){
+  alert("JSON Data: " + json.users[3].name);
+});
+    </script>
+	
+</body>
+</html>

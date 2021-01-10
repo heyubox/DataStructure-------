@@ -1,0 +1,23 @@
+﻿  main.cpp
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(193,38): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(227,45): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(263,44): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(286,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(290,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(399,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(457,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(465,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(463,14): warning C4101: “id”: 未引用的局部变量
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(464,14): warning C4101: “y”: 未引用的局部变量
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(463,8): warning C4101: “time”: 未引用的局部变量
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(464,11): warning C4101: “x”: 未引用的局部变量
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(479,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(493,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(573,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(580,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(589,18): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(602,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(607,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(507): warning C4715: “RStarTree::Findleaf”: 不是所有的控件路径都返回值
+C:\Users\DeLL\Desktop\rtree_ver2.0\rstartree.h(470): warning C4715: “RStarTree::CoverFind”: 不是所有的控件路径都返回值
+  rtree_ver2.0.vcxproj -> C:\Users\DeLL\Desktop\rtree_ver2.0\Debug\rtree_ver2.0.exe

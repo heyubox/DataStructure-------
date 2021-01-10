@@ -1,0 +1,78 @@
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>PoPo数据可视化_百度地图热力图</title>
+		<script src="http://static.popodv.com/dvlibs/echarts/echarts.v4.min.js"></script>
+		<script src="http://api.map.baidu.com/getscript?v=2.0&ak=EE06A4Kgswp6Hz2fe7mg9AHf3G0Nzy14"></script>
+		<script src="http://static.popodv.com/dvlibs/echarts/bmap.min.js"></script>
+		<script src="http://static.popodv.com/dvlibs/tool/jquery.min.js"></script>
+		<style>html,body,#container{width:100%;height:100%;margin:0;padding:0;}</style>
+	</head>
+	<body>
+		<div id="container"></div>
+		<script>
+			//test
+			var dataSet= [];
+debugger;
+function taxidata(rs){
+for (var i = 0; i < rs.length; i++) {
+	var geoCoord = rs[i].cod;
+	geoCoord.push(1)
+	dataSet.push(geoCoord);
+}
+
+console.log(dataSet);
+}
+
+
+</script>
+
+<script src="../data.json?callback=taxidata"></script>
+		<script>
+        debugger;
+		var myChart = echarts.init(document.getElementById('container'));
+
+			myChart.setOption(option = {
+				animation: false,
+				bmap: {
+					center: [116.403694,39.915599],
+					zoom: 14,
+					roam: true
+				},
+				visualMap: {
+					show: false,
+					top: 'top',
+					min: 0,
+					max: 5,
+					seriesIndex: 0,
+					calculable: true,
+					inRange: {
+						color: ['blue', 'blue', 'green', 'yellow', 'red']
+					}
+				},
+				series: [{
+					type: 'heatmap',
+					coordinateSystem: 'bmap',
+					data: dataSet,
+					pointSize: 5,
+					blurSize: 6
+				}]
+			});
+			// if (!app.inNode) {
+				// 添加百度地图插件
+				var bmap = myChart.getModel().getComponent('bmap').getBMap();
+				bmap.addControl(new BMap.MapTypeControl());
+			// }
+			
+
+
+
+		// 刷新调整
+		window.onresize = function () {
+			myChart.resize();
+		}
+				</script>
+</body>
+</html>

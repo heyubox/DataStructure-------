@@ -1,0 +1,28 @@
+<html>
+   <head>
+      <title>Prototype examples</title> 
+      <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
+      
+      <script>
+         function showOptions() {
+            var NodeList = $('employees').getElementsByTagName('option');
+            var nodes = $A(NodeList);
+            debugger;
+            nodes.each(function(node) {
+               alert(node.nodeName + ': ' + node.innerHTML);
+            });
+         }
+      </script>
+   </head>
+
+   <body>
+      <select id = "employees" size = "10" >
+         <option value = "5">Mohtashim, Mohd</option>
+         <option value = "8">Debi, Patnaik</option>
+         <option value = "1">Madisetti, Praveen</option>
+      </select>
+      <br />
+      
+      <input type = "button" value = "Show the options" onclick = "showOptions();"/>
+   </body>
+</html>

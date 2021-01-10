@@ -1,0 +1,19 @@
+﻿  main.cpp
+E:\大二下\MyProjectOfRstartree\filereader.h(65,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\大二下\MyProjectOfRstartree\rstartree.h(321,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\大二下\MyProjectOfRstartree\rstartree.h(321,1): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
+E:\大二下\MyProjectOfRstartree\rstartree.h(397,14): warning C4101: “id”: 未引用的局部变量
+E:\大二下\MyProjectOfRstartree\rstartree.h(398,14): warning C4101: “y”: 未引用的局部变量
+E:\大二下\MyProjectOfRstartree\rstartree.h(397,8): warning C4101: “time”: 未引用的局部变量
+E:\大二下\MyProjectOfRstartree\rstartree.h(398,11): warning C4101: “x”: 未引用的局部变量
+E:\大二下\MyProjectOfRstartree\rstartree.h(543,1): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=int
+          ]
+E:\大二下\MyProjectOfRstartree\rstartree.h(620,1): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+E:\大二下\MyProjectOfRstartree\rstartree.h(558,18): warning C4101: “s”: 未引用的局部变量
+E:\大二下\MyProjectOfRstartree\main.cpp(18,49): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\大二下\MyProjectOfRstartree\rstartree.h(441): warning C4715: “RStarTree::Findleaf”: 不是所有的控件路径都返回值
+E:\大二下\MyProjectOfRstartree\rstartree.h(404): warning C4715: “RStarTree::CoverFind”: 不是所有的控件路径都返回值
+  MyProjectOfRstartree.vcxproj -> E:\大二下\MyProjectOfRstartree\x64\Debug\MyProjectOfRstartree.exe

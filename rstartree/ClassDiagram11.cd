@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="boundingbox">
+    <Position X="1.75" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="boundingbox::SortByLowedge" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>boundingbox.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="boundingbox::SortByHighedge" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>boundingbox.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="boundingbox::SortByDistanceFromCenter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>boundingbox.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="boundingbox::SortByArea">
+        <TypeIdentifier>
+          <NewMemberFileName>boundingbox.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAgCAACAAAgQAAAABAgAIAAACQAAAE=</HashCode>
+      <FileName>boundingbox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileReader" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAACAAAAYAAAAAhAAACAAABCAAAERgAAAAAAAA=</HashCode>
+      <FileName>filereader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RStarNode" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rstartree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RStarLeaf" Collapsed="true">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAgAEEAIAAAACAAEAAAA=</HashCode>
+      <FileName>rstartree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RStarTree">
+    <Position X="10.5" Y="3" Width="3.25" />
+    <Members>
+      <Method Name="checkcor" Hidden="true" />
+      <Method Name="clearfound" Hidden="true" />
+      <Method Name="difArea" Hidden="true" />
+      <Method Name="pushback_cor" Hidden="true" />
+      <Method Name="RStarTree" Hidden="true" />
+      <Method Name="TimeFit" Hidden="true" />
+      <Method Name="visit" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="RStarTree::boundingbox" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>rstartree.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="RStarTree::foundNode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>rstartree.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="RStarTree::Leaf" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>rstartree.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="RStarTree::Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>rstartree.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EBCEAUBAAgAAIAAAAcAEAABAIBhABAQQAAoBAAIKgQE=</HashCode>
+      <FileName>rstartree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="leafbox" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>boundingbox.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="foundNode" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABIAEAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>rstartree.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,4 @@
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\x64\Debug\MyProjectOfRstartree.exe
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\x64\Debug\MyProjectOfRstartree.pdb
+E:\大二下\MyProjectOfRstartree\x64\Debug\MyProjectOfRstartree.exe
+E:\大二下\MyProjectOfRstartree\x64\Debug\MyProjectOfRstartree.pdb

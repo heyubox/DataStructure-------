@@ -1,0 +1,18 @@
+﻿  main.cpp
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(158,38): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(201,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(210,45): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(213,1): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(242,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(246,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(271,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(302,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(313,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(395,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(402,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(411,18): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(424,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(431,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\main.cpp(17,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\DeLL\Desktop\MyProjectOfRstartree\rstartree.h(324): warning C4715: “RStarTree::Findleaf”: 不是所有的控件路径都返回值
+  MyProjectOfRstartree.vcxproj -> C:\Users\DeLL\Desktop\MyProjectOfRstartree\Debug\MyProjectOfRstartree.exe

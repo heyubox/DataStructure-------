@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(49, 103, 155, 0.5);
+}
+
+div#sortBlock {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 700px;
+    border-radius: 3px;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
