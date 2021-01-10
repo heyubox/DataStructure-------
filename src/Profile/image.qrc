@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>locus.png</file>
+        <file>mask.png</file>
+        <file>sepflow.png</file>
+        <file>ser.png</file>
+        <file>grid.png</file>
+        <file>kPath.png</file>
+        <file>sub1.png</file>
+        <file>add1.png</file>
+        <file>sub.png</file>
+        <file>add.png</file>
+        <file>handle.png</file>
+        <file>show.png</file>
+        <file>showmask.png</file>
+        <file>hidemask.png</file>
+        <file>hide.png</file>
+        <file>pdown.png</file>
+        <file>pup.png</file>
+        <file>up.png</file>
+        <file>down.png</file>
+        <file>team.png</file>
+        <file>copyright.png</file>
+    </qresource>
+</RCC>

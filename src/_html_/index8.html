@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+body,html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+#allmap {width: 100%; height:100%; overflow: hidden;}
+dl,dt,dd,ul,li{
+margin:0;
+padding:0;
+list-style:none;
+}
+p{font-size:12px;}
+dt{
+font-size:14px;
+font-family:"微软雅黑";
+font-weight:bold;
+border-bottom:1px dotted #000;
+padding:5px 0 5px 5px;
+margin:5px 0;
+}
+dd{
+padding:5px 0 0 5px;
+}
+li{
+line-height:28px;
+}
+</style>
+
+
+<script type="text/javascript" src="../_jsp_/qwebchannel.js"></script>
+<script type="text/javascript" src="../_jsp_/msgutils.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lluR1IC7arggH6iz4PL07YCxpnMlfn0W"></script>
+<script type="text/javascript" src="../_jsp_/Heatmap_min.js"></script>
+<!--加载鼠标绘制工具-->
+<script type="text/javascript" src="../_jsp_/DrawingManager_min.js"></script>
+<link rel="stylesheet" href="../_css_/DrawingManager_min.css" />
+<title>kPath</title>
+</head>
+
+
+<body>
+
+<div id="allmap" style="overflow:hidden;zoom:1;position:relative;">
+	<div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+</div>
+
+
+
+<script type="text/javascript">
+
+var heatmapOverlay = null;
+var nowMode = 'a';
+var aRect = null, bRect = null;
+var map = null;
+
+function callback(rs){
+	var points = [];
+	for (var i = 0; i < rs.data.length; i++) {
+		points.push(rs.data[i]);
+	}
+	heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":5, "opacity": 70});
+	map.addOverlay(heatmapOverlay);
+	heatmapOverlay.setDataSet({data:points,max:1});
+	sendMessage("showed");
+}
+
+
+function loadScript(msg){
+
+	if(heatmapOverlay != null){
+		heatmapOverlay.hide();
+		map.removeOverlay(heatmapOverlay);
+		heatmapOverlay = null;
+	}
+
+	if(document.getElementById('tempFile') != null){
+		document.body.removeChild(document.getElementById('tempFile'));
+	}
+
+	if(msg == 'false'){
+		alert("too many points unable to show");
+		return ;
+	}
+
+  	var script = document.createElement('script');
+  	script.type = "text/javascript";
+  	script.src = msg;
+  	script.id = 'tempFile';
+  	document.body.appendChild(script);
+}
+
+function switchMode(){
+	if(nowMode == 'a')
+		nowMode = 'b';
+	else
+		nowMode = 'a';
+}
+
+
+map = new BMap.Map('map',{'enableMapClick':false});
+var poi = new BMap.Point(116.418261, 39.921984);
+map.centerAndZoom(poi, 13);
+map.enableScrollWheelZoom();
+
+
+var overlaycomplete = function(e){
+
+	if(nowMode == 'a' && aRect != null){
+		map.removeOverlay(aRect);
+	}else if(nowMode =='b' && bRect != null){
+		map.removeOverlay(bRect);
+	}
+
+	if(nowMode == 'a')
+		aRect = e.overlay;
+	else
+		bRect = e.overlay;
+
+	var ary = e.overlay.getPath();
+	var msg = ary[1].lng + ',' + ary[1].lat + ',' + ary[3].lng + ',' + ary[3].lat;
+	sendMessage(msg);
+}
+
+var styleOptions = {
+strokeColor:"red", //边线颜色。
+//fillColor:"red", //填充颜色。当参数为空时，圆形将没有填充效果。
+strokeWeight: 1, //边线的宽度，以像素为单位。
+strokeOpacity: 0.8, //边线透明度，取值范围0 - 1。
+fillOpacity: 0.6, //填充的透明度，取值范围0 - 1。
+strokeStyle: 'solid' //边线的样式，solid或dashed。
+}
+
+//实例化鼠标绘制工具
+var drawingManager = new BMapLib.DrawingManager(map, {
+isOpen: false, //是否开启绘制模式
+enableDrawingTool: true, //是否显示工具栏
+enableCalculate: false,
+drawingToolOptions: {
+anchor: BMAP_ANCHOR_TOP_RIGHT, //位置
+offset: new BMap.Size(5, 5), //偏离值
+drawingModes:[BMAP_DRAWING_RECTANGLE]
+},
+rectangleOptions: styleOptions //矩形的样式
+});
+
+//添加鼠标绘制工具监听事件，用于获取绘制结果
+drawingManager.addEventListener('overlaycomplete', overlaycomplete);
+
+</script>
+
+</body>
+</html>
